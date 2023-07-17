@@ -14,7 +14,34 @@ h1 {
 }
 
 .container {
+  align-items: center;
   background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 900px;
   width: 100%;
+}
+
+.tabs {
+  color: rgb(200, 175, 255);
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.tabs p {
+  padding: 16px;
+}
+
+.tabs p:hover {
+  color: rgb(83, 49, 156);
+  cursor: pointer;
+}
+
+.tabs p.active {
+  color: rgb(83, 49, 156);
 }
