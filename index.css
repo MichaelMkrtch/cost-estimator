@@ -11,12 +11,14 @@ body {
 
 h1 {
   color: rgb(83, 49, 156);
+  margin: 32px 0 64px 0;
 }
 
 .container {
   align-items: center;
   background-color: white;
   border-radius: 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,6 +94,7 @@ h1 {
   justify-content: space-between;
   padding: 0 4px 0 16px;
   text-transform: uppercase;
+  cursor: pointer;
   width: 140px;
 }
 
@@ -136,6 +139,7 @@ h1 {
 
 .slider {
   position: relative;
+  margin-bottom: 16px;
   width: 100%;
 }
 
@@ -191,4 +195,77 @@ h1 {
   list-style: none;
   justify-content: space-between;
   padding: 0;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card {
+  background-color: rgb(250, 247, 255);
+  border-radius: 10px;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+  color: rgb(83, 49, 156);
+  font-weight: bold;
+  margin: 16px;
+  padding: 16px 32px;
+  position: relative;
+  text-align: center;
+  transition: 0.15s transform ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card .top-section {
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.card .top-section p {
+  margin: 4px 0;
+}
+
+.card .discount-header {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  left: 0;
+  position: absolute;
+  top: -24px;
+  width: 100%;
+}
+
+.card .price {
+  color: rgb(44, 44, 44);
+  font-size: 42px;
+}
+
+.card hr {
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 2px;
+  width: 30%;
+}
+
+.card button {
+  background-color: rgb(83, 49, 156);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin: 8px 0;
+  padding: 16px;
+  transition: 0.15s transform ease;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
